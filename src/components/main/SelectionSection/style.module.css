@@ -1,0 +1,20 @@
+.container {
+    padding: 60px 15%;
+}
+
+.containerBlock{
+    background-color: var(--sec-bg-color);
+    padding: 40px 100px;
+}
+
+@media (max-width: 1366px) {
+    .container {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 10%;
+    }
+}

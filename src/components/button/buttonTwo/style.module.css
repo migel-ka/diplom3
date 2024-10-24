@@ -1,0 +1,20 @@
+.button {
+  font-family: 'IntroRegular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--white-color);
+  border-radius: 4px;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  }
+
+.button {
+  width: 166px;
+  height: 60px;
+  background-color: var(--text-color);
+}
+
+.button:hover {
+  background-color: rgba(49, 52, 60, 1);
+}

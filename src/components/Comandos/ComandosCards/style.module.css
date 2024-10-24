@@ -1,0 +1,22 @@
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1rem;
+    position: static;
+    z-index: 1;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1750px) {
+    .containerGrid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 650px) {
+    .containerGrid {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+

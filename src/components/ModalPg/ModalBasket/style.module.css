@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.containerBord {
+    border: 1px solid var(--grey-color);
+    padding: 10px;
+    margin: 40px 0;
+}

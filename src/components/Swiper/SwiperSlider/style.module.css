@@ -1,0 +1,48 @@
+.mySwiperP {
+    padding: 20px 0 10px 0;
+    text-align: left;
+    border-bottom: 1px solid;
+}
+
+.mySwiperH3 {
+    padding: 20px 0;
+}
+
+.mySwiperSectionImage {
+    display: flex;
+    flex-direction: column;
+}
+
+.mySwiperSectionImage img {
+    max-width: 280px;
+}
+.mySwiperSectionImages{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1rem;
+}
+
+.mySwiperChekbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mySwiperChekboxImage {
+    padding: 20px 0;
+    object-fit: cover;
+}
+
+.mySwiperInputText{
+    width: 465px;
+    height: 246px;
+    border: none;
+    color: inherit;
+    border-radius: 4px;
+}
+
+.containerForm {
+    background-color: var(--small-text);
+    padding: 40px;
+    margin-top: 25px;
+    color: var(--white-color);
+}

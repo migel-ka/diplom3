@@ -1,0 +1,96 @@
+@font-face{
+  font-family: 'IntroRegular';
+  src: url("./components/fonts/Intro-Regular.woff2");
+} 
+@font-face{
+  font-family: 'IntroBold';
+  src: url("./components/fonts/Intro-Bold.woff2");
+} 
+@font-face{
+  font-family: 'IntroBook';
+  src: url("./components/fonts/Intro-Book.woff2");
+} 
+
+:root {
+  --bg-color: rgba(72, 66, 131, 1);
+  --accent-color: rgba(241, 79, 79, 1);
+  --accent-hover-color: rgba(204, 73, 73, 1);
+  --accent-activ-color: rgba(140, 40, 40, 1);
+  --text-color: rgba(68, 75, 88, 1);
+  --grey-color: rgba(178, 181, 187, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --sec-bg-color: rgba(255, 244, 238, 1);
+  --small-text: rgba(219, 187, 169, 1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'IntroRegular';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+h2{
+  font-family: 'IntroBold';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+h3{
+  font-family: 'IntroBook';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+P {
+  font-family: 'IntroBook';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+span {
+  font-family: 'IntroRegular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'IntroBook';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--white-color);
+}
+
+a:hover{
+  font-weight: 600;
+  color: var(--sec-bg-color);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(77, 77, 77, 0.2);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-color);
+}
+
+
+
+

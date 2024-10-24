@@ -1,0 +1,33 @@
+.section {
+    background-color: var( --bg-color);
+}
+
+.figure {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+}
+
+.container {
+    padding: 0 15%;
+    padding-top: 40px;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        z-index: 10;
+    }
+}
+
+@media (max-width: 1366px) {
+    .container {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 5%;
+    }
+}

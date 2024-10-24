@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.buttonContainer {
+    position: absolute; /* Позиционируем кнопки относительно родительского контейнера */
+    bottom: 50%; /* Располагаем кнопки снизу */
+    left: 50%; /* Располагаем кнопки слева */
+    transform: translate(-50%, -50%);
+    display: flex; /* Используем flexbox для размещения кнопок рядом */
+    gap: 50px; /* Промежуток между кнопками */
+}
+  
+  .button {
+    cursor: pointer; /* Курсор при наведении */
+}

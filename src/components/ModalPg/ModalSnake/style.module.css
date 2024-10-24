@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 60px 40px;
+}
+
+.modalBlock {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: 20px;
+}
+
+.imgSneak {
+    max-width: 100%;
+    max-height: auto; 
+    object-fit: cover;
+    padding-bottom: 60px;
+    border-radius: 4px;
+}
+
+.container h3{
+    padding-bottom: 24px;
+}
+
+.modalBlockDescription{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalBlockDescriptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modalBlockDescriptionsPrice {
+    display: flex;
+}

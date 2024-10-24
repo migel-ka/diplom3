@@ -1,0 +1,46 @@
+.section {
+    background-color: var( --bg-color);
+}
+
+.figure {
+    position: absolute;
+    z-index: 0;
+}
+
+.container {
+    padding: 0 15%;
+    color: var(--white-color);
+    display: flex;
+    z-index: 1;
+}
+
+.sectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.sectionTextP{
+    line-height: 22.4px;
+    margin-top: 20px;
+}
+
+.sectionTextSpan {
+    text-align: right;
+    margin-top: 20px;
+}
+
+@media (max-width: 1366px) {
+    .container {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 10%;
+        flex-direction: column-reverse;
+        
+    }
+}

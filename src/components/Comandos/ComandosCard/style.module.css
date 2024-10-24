@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.containerImg {
+    border-radius: 4px;
+    max-width: 380px;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .containerImg {
+        max-width: 250px;
+        height: 300px;
+    }
+}

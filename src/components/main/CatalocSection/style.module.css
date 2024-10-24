@@ -1,0 +1,27 @@
+.container {
+    background-color: var(--white-color);
+    padding: 60px 15%;
+}
+
+.containerFilterCatalog{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1366px) {
+    .container {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 900px) {
+    .containerFilterCatalog{
+        flex-direction: column;
+    }
+}

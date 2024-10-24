@@ -1,0 +1,45 @@
+@import url(..//../index.css);
+
+.container {
+    background-color: var(--bg-color);
+    padding: 0 15%;
+}
+
+.contenerNav {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--white-color) ;
+}
+
+.containerIntro {
+    padding: 100px 0;
+    color: var(--white-color);
+    width: 70%;
+}
+
+.containerIntro h1 {
+    line-height: 50.4px
+}
+
+.containerIntro p{
+    margin: 20px 0 40px 0;
+}
+
+.containerNav {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1366px) {
+    .container {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 10%;
+    }
+}
