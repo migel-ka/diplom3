@@ -5,7 +5,7 @@ import FIGURE from "..//../images/main/figure.png";
 function AboutUsSection() {
   
     return (
-      <section className={style.section}>
+      <section id="AboutUsSection" className={style.section}>
         <img className={style.figure} src={FIGURE} alt="figure" />
         <div className={style.container}>
           <div className={style.sectionText}>

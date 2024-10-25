@@ -4,7 +4,7 @@
     width: max-content;
     padding: 10px 0;
     position: relative;
-
+    
     &:before {
       content: "";
       position: absolute;
@@ -13,47 +13,47 @@
       transform: translate(-50%, -50%);
       width: 1px;
       height: 34px;
-      background-color: var(--grey-color);
+      background-color: var(--gray);
     }
 
-    .priceInput {
+    input {
       max-width: 120px;
       text-align: center;
     }
+}
+
+.noUi {
+  &-target {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    background: none;
+    border: none;
   }
 
-  .noUi {
-    &-target {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      transform: translateY(50%);
-      background: none;
-      border: none;
+  &-horizontal {
+    height: 4px;
+  }
+
+  &-connect {
+    background: #444b58;
+  }
+
+  &-handle {
+    width: 6px;
+    height: 20px;
+    background-color: #444b58;
+    box-shadow: none;
+    border: none;
+    top: -8px;
+    right: -3px;
+
+    &::before {
+      content: none;
     }
-
-    &-horizontal {
-      height: 4px;
-    }
-
-    &-connect {
-      background: #444b58;
-    }
-
-    &-handle {
-      width: 6px;
-      height: 20px;
-      background-color: #444b58;
-      box-shadow: none;
-      border: none;
-      top: -8px;
-      right: -3px;
-
-      &::before {
-        content: none;
-      }
-      &::after {
-        content: none;
-      }
+    &::after {
+      content: none;
     }
   }
+}

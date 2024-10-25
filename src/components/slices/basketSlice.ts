@@ -22,7 +22,7 @@ export interface ISneakers {
 }
 
 // Определяем базовый URL для API
-const BASE_URL: string = "https://41da9a196ecd7a5c.mokky.dev"; //https://2f69e477139ca830.mokky.dev
+const BASE_URL: string = "https://41da9a196ecd7a5c.mokky.dev";
 
 // Создаем асинхронный экшен для получения корзины
 export const fetchBasket = createAsyncThunk<ISneakers[]>(

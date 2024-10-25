@@ -29,7 +29,7 @@ interface IParams {
   sizes: number[];      // Массив доступных размеров
 }
 
-const BASE_URL: string = "https://41da9a196ecd7a5c.mokky.dev"; //https://57ebb7d934c23933.mokky.dev
+const BASE_URL: string = "https://57ebb7d934c23933.mokky.dev";
 
 // Создаем асинхронный экшен для получения кроссовок с учетом параметров фильтрации
 export const fetchSneakers = createAsyncThunk<ISneakers[], IParams>(

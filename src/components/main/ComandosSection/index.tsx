@@ -10,7 +10,7 @@ interface Props {
 const ComandosSection: FC<Props> = ({ filterValue }) => {
   
     return (
-      <section className={style.section}>
+      <section id="ComandosSection" className={style.section}>
         <img className={style.figure} src={FIGURE} alt="figure" />
         <div className={style.container}>
          <h2>Наша команда</h2>

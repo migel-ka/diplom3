@@ -2,6 +2,7 @@ import Nouislider from "nouislider-react";
 import { FC } from "react";
 import { UseFormRegister, UseFormSetValue } from "react-hook-form";
 import { IFormData } from "../FilterCalalog";
+import "nouislider/distribute/nouislider.css";
 import style from "./style.module.css";
 
 

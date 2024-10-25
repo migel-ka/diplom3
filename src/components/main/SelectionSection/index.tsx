@@ -5,7 +5,7 @@ import SelectionSectionSwiper from "../../Swiper/SwiperSlider";
 function SelectionSection() {
   
     return (
-      <section className={style.container}>
+      <section id="SelectionSection" className={style.container}>
         <div className={style.containerBlock}>
           <SelectionSectionSwiper />
         </div>

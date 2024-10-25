@@ -15,7 +15,7 @@ const faqList = [
 const QuestionsSection : React.FC = () => {
 
   return (
-    <section className={style.section}>
+    <section id="QuestionsSection" className={style.section}>
       <div className={style.container}>
         <h2>Часто задаваемые вопросы</h2>
         <Accordion faqList={faqList} />

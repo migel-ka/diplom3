@@ -1,5 +1,9 @@
 .section {
     background-color: var( --bg-color);
+
+    h2 {
+        padding: 60px 0 40px 0;
+    }
 }
 
 .figure {
@@ -9,7 +13,7 @@
 }
 
 .container {
-    padding: 0 15%;
+    padding: 60px 15%;
     padding-top: 40px;
     color: var(--white-color);
     display: flex;

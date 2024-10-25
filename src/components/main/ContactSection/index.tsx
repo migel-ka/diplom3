@@ -8,7 +8,7 @@ import YandexMap from "./YandexMap/YandexMap";
 function ContactSection() {
   
     return (
-      <section className={style.section}>
+      <section id="ContactSection" className={style.section}>
         <div className={style.container}>
          <div className={style.sectionText}>
           <h2>Контакты</h2>

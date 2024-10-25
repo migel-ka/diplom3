@@ -12,7 +12,7 @@ const CatalocSection: FC<Props> = ({ filterValue }) => {
  const [gender, setGender] = useState<string>(""); 
   
     return (
-      <section className={style.container}>
+      <section id="CatalocSection" className={style.container}>
         <h2>Каталог</h2>
         <div className={style.containerFilterCatalog}>
           <div> 
