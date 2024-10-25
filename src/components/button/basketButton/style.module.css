@@ -29,6 +29,12 @@
     .containerLink:not(:last-child) {
         margin-right: 15px;
     }
+
+    .container {
+        font-size: 10px;
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 1024px) {

@@ -9,11 +9,11 @@ interface IProps {
 
 const genders = [
   {
-    value: "мужской",
+    value: "Мужской",
     label: "male",
   },
   {
-    value: "женский",
+    value: "Женский",
     label: "female",
   },
 ];

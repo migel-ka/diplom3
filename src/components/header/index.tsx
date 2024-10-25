@@ -4,9 +4,15 @@ import Nav from "../Nav/index";
 import { Link } from "react-router-dom";
 import BasketButton from "../button/basketButton/index";
 import ButtonOne from "../button/button";
+import { useState } from "react";
+import NavMobile from "../Nav/BurgerMenu";
 
-function Header() {
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
   
+  const handleMenu = ()=> {
+    setMenuOpen(!menuOpen)
+  }
   const handleClick = () => {
     console.log("Кнопка нажата!");
   };
@@ -18,6 +24,14 @@ function Header() {
           <img src={LOGO} alt="logo" />
           </Link>
           <div className={style.containerNav}>
+          <button className={style.burgerBTN} onClick={handleMenu}>
+            <div className={style.burger} >
+                <div className={style.burgerLine}></div>
+                <div className={style.burgerLine}></div>
+                <div className={style.burgerLine}></div>
+            </div>
+            </button>
+            {menuOpen && <NavMobile handleMenu = {handleMenu}/>}
              <Nav />
              <BasketButton />
           </div>

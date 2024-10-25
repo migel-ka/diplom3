@@ -2,7 +2,7 @@
 import style from "./style.module.css";
 import { HashLink as Link } from 'react-router-hash-link';
 
-function Nav() {
+export const Nav = () => {
   
     return (
       <nav className={style.container}>

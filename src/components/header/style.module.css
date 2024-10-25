@@ -13,6 +13,10 @@
     border-bottom: 1px solid var(--white-color) ;
 }
 
+.burgerBTN {
+    border: none;
+}
+
 .containerIntro {
     padding: 100px 0;
     color: var(--white-color);
@@ -32,6 +36,18 @@
     align-items: center;
 }
 
+.burger {
+    display: none;
+    right: 200px;
+    top: 20px;
+}
+
+.burgerLine {
+    height: 2px;
+    width: 100%;
+    background-color: var(--accent-color); 
+}
+
 @media (max-width: 1366px) {
     .container {
         padding: 0 10%;
@@ -41,5 +57,29 @@
 @media (max-width: 1024px) {
     .container {
         padding: 0 10%;
+    }
+}
+
+@media (max-width: 900px) {
+    .burger {
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .burger {
+        right: 175px;
+    }
+}
+
+@media (max-width: 400px) {
+    .burger {
+        right: 135px;
     }
 }

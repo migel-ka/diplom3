@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px; 
+    right: 20px;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.link {
+    padding: 10px 15px; 
+    text-decoration: none; 
+    color: #333; 
+}
+
+.containerLink {
+    color: var(--text-color);
+}
+
+.containerLink:hover {
+    color: var(--accent-color);
+}
