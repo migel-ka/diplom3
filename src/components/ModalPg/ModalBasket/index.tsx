@@ -3,10 +3,10 @@ import style from "./style.module.css";
 import ButtonOne from "../../button/button";
 import Modal from "../../feature/Modal";
 import FormBasket from "../../Review/formBasket";
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
 import { ISneakers } from "../../slices/basketSlice";
-import { RootState } from "../../../store";
+import { AppDispatch, RootState } from "../../../store";
+import { delBasket } from "../../slices/basketSlice";
 
 type Props = {
     closeModalBasket: () => void;
@@ -15,14 +15,17 @@ type Props = {
 
 const ModalBasket: FC<Props> = ({ closeModalBasket, isModalOpenBasket }) => {
 
-    // const totalPrice = sneaker.reduce((sum, sneake) => sum + sneake.price, 0);
     const sneaker = useSelector<RootState, ISneakers[]>(
         (state) => state.basket.data
       );
 
     const handleClick = () => {
-        // clearBasket();
+        console.log ('Заказ оформлен!')
     };
+
+    const dispatch = useDispatch<AppDispatch>();
+
+    const totalPrice = sneaker.reduce((acc, sneake) => acc + sneake.price, 0);
 
     return (
         <Modal isOpen={isModalOpenBasket} onClose={closeModalBasket}>
@@ -32,14 +35,22 @@ const ModalBasket: FC<Props> = ({ closeModalBasket, isModalOpenBasket }) => {
                     {sneaker.length > 0 ? (
                         <>
                             <p>Товаров в заказе: <b>{sneaker.length} шт.</b></p>
-                            <p>Общая сумма: <b>{sneaker.length} ₽</b></p>
+                            <p>Общая сумма: <b>{totalPrice} ₽</b></p>
                             <p>Состав заказа</p>
+                            <div className={style.sneakerItems}>
                             {sneaker.map(sneake => (
                                 <div key={sneake.id} className={style.sneakerItem}>
-                                    <p>Название: {sneake.title}</p>
-                                    <p>Цена: {sneake.price} ₽</p>
+                                <img className={style.sneakerItemImg} src={sneake.imgUrl} alt={sneake.title} />
+                                <div className={style.sneakerTitle}>
+                                    <p>{sneake.title}</p>
+                                    <span>{sneake.price} ₽</span>
                                 </div>
+                                <button className={style.sneakerItemBtn} onClick={() => dispatch(delBasket(sneake.id))}>
+                                    Удалить
+                                </button>
+                            </div>
                             ))}
+                            </div>
                         </>
                     ) : (
                         <p>Корзина пуста</p> 

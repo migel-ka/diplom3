@@ -9,3 +9,32 @@
     padding: 10px;
     margin: 40px 0;
 }
+
+.sneakerItem{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1rem;
+}
+
+.sneakerItemImg {
+    object-fit: cover;
+    max-width: 100px;
+}
+
+.sneakerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sneakerItems {
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.sneakerItemBtn {
+    border: none;
+    background-color: inherit;
+}

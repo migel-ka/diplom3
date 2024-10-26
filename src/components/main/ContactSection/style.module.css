@@ -4,7 +4,6 @@
 
 .container {
     padding: 60px 15%;
-    height: 500px;
     color: var(--text-color);
     display: flex;
     justify-content: space-between;   
@@ -31,12 +30,14 @@
 
 @media (max-width: 1366px) {
     .container {
-        padding: 0 10%;
+        padding: 60px 10%;
     }
 }
 
 @media (max-width: 1024px) {
     .container {
-        padding: 0 10%;
+        flex-direction: column-reverse;
+        align-items: center;
     }
+
 }

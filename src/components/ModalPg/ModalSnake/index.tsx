@@ -4,6 +4,9 @@ import style from "./style.module.css";
 import ButtonOne from "../../button/button";
 import DECARD from "..//..//images/modal/Vector.svg";
 import Modal from "../../feature/Modal";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../../store";
+import { postBasket } from "../../slices/basketSlice";
 
 type Props = {
     data: Sneaker;
@@ -13,10 +16,7 @@ type Props = {
 
 const ModalSnake: FC<Props> = ({ data, closeModal, isModalOpen }) => {
 
-  const handleClickAdd = (data: any) => {
-    addSneaker(data); 
-  };
-
+  const dispatch = useDispatch<AppDispatch>();
   return (
     <>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
@@ -37,7 +37,7 @@ const ModalSnake: FC<Props> = ({ data, closeModal, isModalOpen }) => {
                           <span>{data.price}</span>
                           <p>{data.oldPrice}</p>
                       </div>
-                      <ButtonOne onClick={handleClickAdd} text="Заказать"/>
+                      <ButtonOne onClick={() => dispatch(postBasket(data))} text="Заказать"/>
                       <div>
                           <p><img src={DECARD} alt="none" /> Бесплатная доставка до двери</p>
                           <p><img src={DECARD} alt="none" /> Оплата заказа при получении</p>

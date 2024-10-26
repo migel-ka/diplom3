@@ -4,12 +4,12 @@ import { Sneaker } from "../type/sneaker";
 import Loader from "../Loader";
 
 const SneakerPage = () => {
-  const params = useParams<{ id: string }>(); // Указываем тип параметров
+  const params = useParams<{ id: string }>(); 
   const [sneakerData, setSneakerData] = useState<Sneaker | null>(null);
 
   useEffect(() => {
     const getData = async () => {
-      if (!params.id) return; // Проверка на наличие id
+      if (!params.id) return; 
 
       try {
         const req = await fetch(
@@ -22,14 +22,14 @@ const SneakerPage = () => {
       }
     };
     getData();
-  }, [params.id]); // Добавляем params.id в зависимости
+  }, [params.id]); 
 
   return (
     <div >
       {sneakerData ? (
         <div>{sneakerData.title}</div>
       ) : (
-        <Loader /> // Можно добавить индикатор загрузки
+        <Loader /> 
       )}
     </div>
   );
