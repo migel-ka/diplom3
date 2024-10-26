@@ -91,6 +91,35 @@ a:hover{
   background: var(--bg-color);
 }
 
+/* Стили слайдера */
+
+
+.noUi-target {
+  background: var(--text-color);
+  height: 5px;
+  border-radius: none;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.noUi-connect {
+  background: var(--text-color); 
+}
+
+.noUi-handle {
+  background: var(--text-color);
+  width: 2px; 
+  height: 2px; 
+
+}
+
+.noUi-handle:hover {
+  background: var(--accent-hover-color); 
+}
+
+.noUi-handle:active {
+  background: var(--accent-activ-color); /* Цвет при активном перетаскивании */
+}
 
 
 

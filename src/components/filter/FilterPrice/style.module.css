@@ -11,29 +11,3 @@
     }
 }
 
-.noUi-target{
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  transform: translateY(50%);
-  background: none;
-  border: none;
-}
-
-.noUi-horizontal {
-  height: 4px;
-}
-
-.noUi-connect {
-  background: grey;
-}
-
-.noUi-handle {
-  width: 6px;
-  height: 20px;
-  background-color: grey;
-  box-shadow: none;
-  border: none;
-  top: -8px;
-  right: -3px;
-}
