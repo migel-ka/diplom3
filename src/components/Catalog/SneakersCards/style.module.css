@@ -8,7 +8,6 @@
     width: 250px;
     height: 60px;
     background-color: var(--accent-color);
-
 }
 
 .containerGrid button:hover {
@@ -22,9 +21,10 @@
     .containerGrid {
         grid-template-columns: repeat(2, auto);
     }
-    @media (max-width: 650px) {
-        .containerGrid {
-            grid-template-columns: repeat(1, auto);
-        }
+}
+
+@media (max-width: 650px) {
+    .containerGrid {
+        grid-template-columns: repeat(1, auto);
     }
 }

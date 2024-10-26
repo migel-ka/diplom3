@@ -7,6 +7,7 @@ import Modal from "../../feature/Modal";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../store";
 import { postBasket } from "../../slices/basketSlice";
+import STAR from "..//..//images/Star.svg";
 
 type Props = {
     data: Sneaker;
@@ -17,6 +18,19 @@ type Props = {
 const ModalSnake: FC<Props> = ({ data, closeModal, isModalOpen }) => {
 
   const dispatch = useDispatch<AppDispatch>();
+
+  const renderStars = (rating: number) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+        stars.push(
+            <span key={i} className={i <= rating ? style.filledStar : style.emptyStar}>
+                <img src={STAR} alt="STAR" />
+            </span>
+        );
+    }
+    return stars;
+};
+
   return (
     <>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
@@ -31,6 +45,9 @@ const ModalSnake: FC<Props> = ({ data, closeModal, isModalOpen }) => {
                           <p>В наличии: {data.inStock} шт.</p>
                       </div>
                       <h2>{data.title}</h2>
+                      <div className={style.starRating}>
+                            {renderStars(data.stars)}
+                      </div>
                       <p>Выберите размер</p>
                       <p>{data.sizes}</p>
                       <div className={style.modalBlockDescriptionsPrice}>

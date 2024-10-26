@@ -14,7 +14,7 @@
 }
 
 .mySwiperSectionImage img {
-    max-width: 280px;
+    width: 100%;
 }
 .mySwiperSectionImages{
     display: grid;
@@ -30,6 +30,7 @@
 .mySwiperChekboxImage {
     padding: 20px 0;
     object-fit: cover;
+    width: 100%;
 }
 
 .mySwiperInputText{
@@ -45,4 +46,9 @@
     padding: 40px;
     margin-top: 25px;
     color: var(--white-color);
+}
+
+@media (max-width: 1550px) {
+
+
 }

@@ -9,6 +9,10 @@ import Review from "../../Review/formSelection";
 
 function SelectionSectionSwiper() {
 
+  const handleCheckboxClick = (label: string) => {
+    console.log(`${label} выбрано`);
+};
+
   return (
     <>
       <Swiper className="mySwiper">
@@ -19,27 +23,27 @@ function SelectionSectionSwiper() {
           <div className={style.mySwiperSectionImages}>
             <div className={style.mySwiperSectionImage}>
               <img src={SNAKEIMG} alt="SNAKEIMG" />
-              <Checkbox text="Кеды" />
+              <Checkbox text="Кеды" onClick={() => handleCheckboxClick("Кеды")}/>
             </div>
             <div className={style.mySwiperSectionImage}>
               <img src={SNAKEIMG} alt="SNAKEIMG" />
-              <Checkbox text="Кеды" />
+              <Checkbox text="Бархатные тяги" onClick={() => handleCheckboxClick("Бархатные тяги")}/>
             </div>
             <div className={style.mySwiperSectionImage}>
               <img src={SNAKEIMG} alt="SNAKEIMG" />
-              <Checkbox text="Кеды" />
+              <Checkbox text="Подкрадули" onClick={() => handleCheckboxClick("Подкрадули")}/>
             </div>
             <div className={style.mySwiperSectionImage}>
               <img src={SNAKEIMG} alt="SNAKEIMG" />
-              <Checkbox text="Кеды" />
+              <Checkbox text="Кони" onClick={() => handleCheckboxClick("Кони")}/>
             </div>
             <div className={style.mySwiperSectionImage}>
               <img src={SNAKEIMG} alt="SNAKEIMG" />
-              <Checkbox text="Кеды" />
+              <Checkbox text="Кросы" onClick={() => handleCheckboxClick("Кросы")}/>
             </div>
             <div className={style.mySwiperSectionImage}>
               <img src={SNAKEIMG} alt="SNAKEIMG" />
-              <Checkbox text="Кеды" />
+              <Checkbox text="Лапти" onClick={() => handleCheckboxClick("Лапти")}/>
             </div>
           </div>
         </SwiperSlide>
@@ -49,11 +53,11 @@ function SelectionSectionSwiper() {
           <h3 className={style.mySwiperH3}>Какой размер вам подойдет?</h3>
           <div>
             <div className={style.mySwiperChekbox}>
-              <Checkbox text="менее 36" />
-              <Checkbox text="36 - 38" />
-              <Checkbox text="39 - 41" />
-              <Checkbox text="42 - 44" />
-              <Checkbox text="45 и больше" />
+              <Checkbox text="менее 36" onClick={() => handleCheckboxClick("менее 36")}/>
+              <Checkbox text="36 - 38" onClick={() => handleCheckboxClick("36 - 38")}/>
+              <Checkbox text="39 - 41"onClick={() => handleCheckboxClick("39 - 41")}/>
+              <Checkbox text="42 - 44" onClick={() => handleCheckboxClick("42 - 44")}/>
+              <Checkbox text="45 и больше" onClick={() => handleCheckboxClick("45 и больше")}/>
             </div>
             <div>
               <img className={style.mySwiperChekboxImage} src={Rectangle45} alt="Rectangle45" />

@@ -16,14 +16,14 @@ interface IProps  {
       <>
         <p>Цена, руб</p>
         <div className={style.filterPrice}>
-          <input className={style.priceInput} type="number" min={0} max={99999} {...register("startPrice")} />
-          <input type="number" min={0} max={99999} {...register("endPrice")} />
+          <input className={style.priceInput} type="number" min={1000} max={50000} {...register("startPrice")} />
+          <input type="number" min={1000} max={50000} {...register("endPrice")} />
           <Nouislider
-            range={{ min: 0, max: 99999 }}
-            start={[1850, 25786]}
+            range={{ min: 1850, max: 50000 }}
+            start={[1850, 50000]}
             orientation="horizontal"
             connect
-            step={1}
+            step={10}
             onChange={([start, end]) => {
               setValue("startPrice", Math.round(start));
               setValue("endPrice", Math.round(end));

@@ -41,6 +41,15 @@
     .container {
         padding: 0 10%;
         flex-direction: column-reverse;
-        
+    }
+
+    .sectionTextSpan {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .figure {
+        width: 50%;
     }
 }

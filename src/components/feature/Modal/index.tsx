@@ -1,16 +1,23 @@
 import { FC, ReactNode } from "react";
 import ReactDOM from "react-dom";
 import "./modal.css";
-import NotFound from "../../pages/NotFound";
 
-type Props={
+type Props = {
     isOpen: boolean;
     onClose: () => void;
     children: ReactNode;
 }
 
 const Modal: FC<Props> = ({ isOpen, onClose, children }) => {
-    if(!isOpen) return null
+    if (!isOpen) return null;
+
+    const portalRoot = document.getElementById('portal-root');
+
+    if (!portalRoot) {
+        console.error("что то не работает...");
+        return null; 
+    }
+
     return ReactDOM.createPortal(
         <div className="modal-overlay">
             <div className="modal-content">
@@ -20,9 +27,8 @@ const Modal: FC<Props> = ({ isOpen, onClose, children }) => {
                 {children}
             </div>
         </div>,
-        document.getElementById('portal-root')
-    )
-    
+        portalRoot
+    );
 }
 
 export default Modal;

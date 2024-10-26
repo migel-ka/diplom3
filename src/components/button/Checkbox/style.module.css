@@ -1,1 +1,35 @@
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none; 
+}
+
+.customCheckbox {
+    width: 20px; 
+    height: 20px; 
+    border: 1px solid var(--small-text);
+    border-radius: 4px; 
+    position: relative; 
+    margin-right: 10px; 
+}
+
+.checkbox:checked + .customCheckbox {
+    background-color:inherit; 
+}
+
+.checkbox:checked + .customCheckbox svg {
+    display: block; 
+}
+
+.customCheckbox svg {
+    display: none; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
 

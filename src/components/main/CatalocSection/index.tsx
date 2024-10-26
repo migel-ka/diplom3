@@ -10,6 +10,7 @@ interface Props {
 const CatalocSection: FC<Props> = ({ filterValue }) => {
   
  const [gender, setGender] = useState<string>(""); 
+ console.log(gender);
   
     return (
       <section id="CatalocSection" className={style.container}>

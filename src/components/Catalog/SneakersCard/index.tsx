@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 import style from "./style.module.css";
 import SneakersCardHove from "../SneakersCardHover";
-import { useDispatch } from "react-redux";
-import { AppDispatch } from "../../../store";
+//import { useDispatch } from "react-redux";
+//import { AppDispatch } from "../../../store";
 import { ISneakers } from "../../slices/basketSlice";
 
 interface IProps {
@@ -10,8 +10,8 @@ interface IProps {
 }
 
 const SneakersCard: FC<IProps> = ({ item }) => {
-  const dispatch = useDispatch<AppDispatch>();
-  const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
+//  const dispatch = useDispatch<AppDispatch>();
+//  const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
 
   const [isHovered, setIsHovered] = useState(false);
   const [isHoveredHove, setIsHoveredHove] = useState(false);
