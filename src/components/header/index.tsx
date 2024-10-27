@@ -43,6 +43,7 @@ const Header = () => {
       <div className={style.containerIntro}>
         <h1>Кроссовки известных брендов с доставкой по России и СНГ</h1>
         <p>Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и многие другие по низким ценам</p>
+        <img src={LOGO} alt="logo" />
         <ButtonOne text="Перейти к покупкам" onClick={handleClick} />
       </div>
     </header>

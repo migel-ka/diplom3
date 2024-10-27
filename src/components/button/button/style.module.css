@@ -11,6 +11,8 @@
     width: 250px;
     height: 60px;
     background-color: var(--accent-color);
+    z-index: 1;
+    position: relative;
 }
 
 .button:hover {

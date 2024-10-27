@@ -21,6 +21,14 @@
     padding: 100px 0;
     color: var(--white-color);
     width: 70%;
+    position: static;
+
+    img {
+        position: absolute;
+        z-index: 0;
+        opacity: 0.5;
+        width: 60%;
+    }
 }
 
 .containerIntro h1 {
