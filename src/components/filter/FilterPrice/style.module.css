@@ -1,13 +1,16 @@
 .filterPrice {
     border: 1px solid var(--grey-color);
     border-radius: 4px;
-    width: max-content;
+    width: 100%;
     padding: 10px 0;
     position: relative;
+    text-align: center;
 
     input {
-      max-width: 120px;
-      text-align: center;
+      max-width: 100%;
+      border: none;
+      background-color: inherit;
+      align-items: center;
     }
 }
 

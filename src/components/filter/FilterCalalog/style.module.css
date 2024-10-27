@@ -6,6 +6,10 @@
     max-height: 597px;
     border-radius: 4px;
     margin-right: 1rem;
+    
+    p{
+        margin-top: 10px;
+    }
 }
 
 .containerBTN {

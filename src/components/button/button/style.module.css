@@ -20,3 +20,18 @@
 .button:active {
   background-color: var(--accent-activ-color);
 }
+
+@media (max-width: 650px) {
+  .button {
+    font-size: 14px;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .button {
+    width: 100px;
+  }
+}

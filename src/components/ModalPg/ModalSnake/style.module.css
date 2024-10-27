@@ -38,3 +38,93 @@
 .modalBlockDescriptionsPrice {
     display: flex;
 }
+
+.redioSize {
+    display: flex;
+}
+
+.sizeLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5px; 
+}
+
+.sizeLabel input[type="radio"] {
+    display: none; 
+}
+
+.sizeLabel .customradio {
+    width: 25px; 
+    height: 25px; 
+    border: 1px solid var(--small-text);
+    border-radius: 4px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-right: 5px; 
+    position: relative;
+    font-size: 14px;
+    color: #333; 
+}
+
+.sizeLabel input[type="radio"]:checked + .customradio {
+    background-color: var(--small-text); 
+    border-color: var(--small-text); 
+    color: white; 
+}
+
+
+
+@media (max-width: 1366px) {
+    .container{
+        padding: 20px;
+        max-width: max-content;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container{
+        padding: 5px;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        h3 {
+            padding-bottom: 10px;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .imgSneak {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        padding: 0;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            padding-bottom: 5px;
+            font-size: 15px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+
+    .imgSneak {
+        padding-bottom: 10px;
+    }
+  
+}

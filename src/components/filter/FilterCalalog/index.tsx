@@ -24,10 +24,9 @@ const FilterCatalog: FC<IProps> = ({ setGender }) => {
   const dispatch = useDispatch<AppDispatch>();
 
   const { register, handleSubmit, setValue } = useForm<IFormData>({
-    // Устанавливаем начальные значения для полей формы.
     defaultValues: {
-      startPrice: 0,
-      endPrice: 99999,
+      startPrice: 1000,
+      endPrice: 50000,
       gender: "",
       sizes: [],
     },
@@ -35,7 +34,6 @@ const FilterCatalog: FC<IProps> = ({ setGender }) => {
 
   const onSubmit: SubmitHandler<IFormData> = (data) => {
     setGender(data.gender);
-    // Вызываем асинхронный экшен `fetchSneakers`, передавая ему объект с параметрами фильтрации:
     dispatch(
       fetchSneakers({
         priceFrom: data.startPrice,

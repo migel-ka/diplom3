@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Sneaker } from "../../type/sneaker";
 import style from "./style.module.css";
 import ButtonOne from "../../button/button";
@@ -16,8 +16,8 @@ type Props = {
 }
 
 const ModalSnake: FC<Props> = ({ data, closeModal, isModalOpen }) => {
-
   const dispatch = useDispatch<AppDispatch>();
+  const [selectedSize, setSelectedSize] = useState<number | null>(null); 
 
   const renderStars = (rating: number) => {
     const stars = [];
@@ -29,7 +29,12 @@ const ModalSnake: FC<Props> = ({ data, closeModal, isModalOpen }) => {
         );
     }
     return stars;
-};
+  };
+
+  const handleSizeChange = (size: number) => {
+      setSelectedSize(size);
+      console.log (selectedSize);
+  };
 
   return (
     <>
@@ -49,7 +54,20 @@ const ModalSnake: FC<Props> = ({ data, closeModal, isModalOpen }) => {
                             {renderStars(data.stars)}
                       </div>
                       <p>Выберите размер</p>
-                      <p>{data.sizes}</p>
+                      <div className={style.redioSize}>
+                         {data.sizes.map((size) => (
+                             <label key={size} className={style.sizeLabel}>
+                                 <input 
+                                     type="radio" 
+                                     name="size" 
+                                     value={size} 
+                                     onChange={() => handleSizeChange(size)} />
+                                 <span className={style.customradio}>
+                                     {size} 
+                                 </span>
+                             </label>
+                         ))}
+                      </div>
                       <div className={style.modalBlockDescriptionsPrice}>
                           <span>{data.price}</span>
                           <p>{data.oldPrice}</p>
