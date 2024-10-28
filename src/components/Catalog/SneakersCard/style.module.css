@@ -1,13 +1,22 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 40px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+
+  p {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  span {
+    margin-top: 10px;
+  }
 }
+
 .containerImg {
-    border-radius: 4px;
-    max-width: 280px;
-    height: 293px;
-    object-fit: cover;
+  border-radius: 4px;
+  max-width: 280px;
+  height: 293px;
+  object-fit: cover;
 }

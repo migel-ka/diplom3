@@ -15,7 +15,7 @@ const Home: FC = () => {
       <CatalocSection filterValue={filterValue} />
       <AboutUsSection />
       <SelectionSection />
-      <ComandosSection filterValue={filterValue} />
+      <ComandosSection  />
       <QuestionsSection />
       <ContactSection />
       <EndSection />

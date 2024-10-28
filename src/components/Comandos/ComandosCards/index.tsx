@@ -3,11 +3,7 @@ import ComandosCard from "../ComandosCard";
 import { Comandos } from "../../type/comandos";
 import style from "./style.module.css";
 
-type Props = {
-  filterValue: string;
-};
-
-const ComandosCards: FC<Props> = ({ filterValue }) => {
+const ComandosCards: FC = () => {
   const [teams, setTeams] = useState<Comandos[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -33,17 +29,13 @@ const ComandosCards: FC<Props> = ({ filterValue }) => {
     fetchData();
   }, []);
 
-  const filteredTeams = filterValue
-    ? teams.filter((item) => item.name.includes(filterValue))
-    : teams;
-
   return (
     <div className={style.containerGrid}>
       {isLoading && <p>...loading</p>}
-      {isError && <p>Server is dead</p>}
-      {filteredTeams.map((team) => (
-        <ComandosCard data={team} key={team.id} />
-      ))}
+      {isError && <p>Что-то не так</p>}
+      {!isLoading &&
+        !isError &&
+        teams.map((team) => <ComandosCard data={team} key={team.id} />)}
     </div>
   );
 };

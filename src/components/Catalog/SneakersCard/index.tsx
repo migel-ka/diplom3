@@ -30,7 +30,7 @@ const SneakersCard: FC<IProps> = ({ item }) => {
     >
       <img className={style.containerImg} src={item.imgUrl} alt={item.title} />
       <p>{item.title}</p>
-      <span>{item.price} p</span>
+      <span>{item.price} ₽</span>
       {isHovered && (
         <div
           onMouseEnter={() => setIsHoveredHove(true)}

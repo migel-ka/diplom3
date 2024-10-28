@@ -8,10 +8,10 @@ function ContactSection() {
       <div className={style.container}>
         <div className={style.sectionText}>
           <h2>Контакты</h2>
-          <p>ГЛАВНЫЙ ОФИС</p>
+          <p className={style.pSpan}>ГЛАВНЫЙ ОФИС</p>
           <a href="tel:+78007898989">+7 800 789 89 89</a>
           <p>г. Санкт-Петербург, Комсомольская, 43 к1</p>
-          <p>ОТДЕЛ ПРОДАЖ</p>
+          <p className={style.pSpan}>ОТДЕЛ ПРОДАЖ</p>
           <a href="tel:+78007898989">+7 800 789 89 89</a>
           <p>г. Санкт-Петербург, Комсомольская, 43 к1</p>
           <div className={style.messeger}>

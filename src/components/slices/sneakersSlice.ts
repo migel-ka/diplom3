@@ -10,7 +10,7 @@ export interface ISneakers {
   id: number;
   imgUrl: string;
   inStock: number;
-  oldPrice: number
+  oldPrice: number;
   price: number;
   sizes: number[];
   stars: number;
@@ -31,24 +31,28 @@ export const fetchSneakers = createAsyncThunk<ISneakers[], IParams>(
   "sneakers/fetchSneakers",
   async (params, { rejectWithValue }) => {
     try {
-      const sizesQuery = params.sizes
-        .map((value) => `sizes[]=${value}`)
-        .join("&");
-      const { data } = await axios.get<ISneakers[]>(
-        `${BASE_URL}/sneakers?price[from]=${params.priceFrom}&price[to]=${params.priceTo
-        }${params.gender ? `&gender=${params.gender}` : ""}${params.sizes.length ? `&${sizesQuery}` : ""
-        }`
-      );
+      const queryParams = new URLSearchParams({
+        'price[from]': params.priceFrom.toString(),
+        'price[to]': params.priceTo.toString(),
+        ...(params.gender && { gender: params.gender }),
+      });
+
+      if (params.sizes.length > 0) {
+        params.sizes.forEach(size => queryParams.append('sizes[]', size.toString()));
+      }
+
+      const { data } = await axios.get<ISneakers[]>(`${BASE_URL}/sneakers?${queryParams.toString()}`);
 
       localStorage.setItem("sneakers", JSON.stringify(data));
 
       return data;
     } catch (error) {
-      console.log(`Failed to fetch:`);
+      console.error("Failed to fetch:", error);
       return rejectWithValue("Failed to fetch sneakers");
     }
   }
 );
+
 interface IState {
   data: ISneakers[];
 }
@@ -62,10 +66,8 @@ export const sneakersSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-
     builder.addCase(fetchSneakers.fulfilled, (state, action) => {
       state.data = action.payload;
-
     });
   },
 });

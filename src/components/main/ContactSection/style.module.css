@@ -13,19 +13,40 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  .pSpan {
+    color: rgba(178, 181, 187, 1);
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    letter-spacing: 0.08em;
+  }
+
+  a {
+    font-family: "Intro Regular";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    color: rgba(68, 75, 88, 1);
+    cursor: pointer;
+    margin: 20px 0 10px 0;
+  }
+
+  a:hover {
+    color: var(--accent-hover-color);
+  }
 }
 
-.sectionText img {
-  padding-right: 20px;
-}
+.messeger {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
 
-.sectionText a {
-  font-family: "Intro Regular";
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 42px;
-  text-align: left;
-  color: rgba(68, 75, 88, 1);
+    img {
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 1366px) {

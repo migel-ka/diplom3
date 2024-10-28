@@ -26,8 +26,9 @@
   img {
     position: absolute;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.12;
     width: 60%;
+    top: 240px;
   }
 }
 
