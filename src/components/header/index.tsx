@@ -9,7 +9,7 @@ import NavMobile from "../Nav/BurgerMenu";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  
+
   const handleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -20,7 +20,7 @@ const Header = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
   return (
     <header className={style.container}>
       <div className={style.contenerNav}>
@@ -42,7 +42,10 @@ const Header = () => {
       </div>
       <div className={style.containerIntro}>
         <h1>Кроссовки известных брендов с доставкой по России и СНГ</h1>
-        <p>Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и многие другие по низким ценам</p>
+        <p>
+          Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и
+          многие другие по низким ценам
+        </p>
         <img src={LOGO} alt="logo" />
         <ButtonOne text="Перейти к покупкам" onClick={handleClick} />
       </div>

@@ -1,54 +1,52 @@
 .mySwiperP {
-    padding: 20px 0 10px 0;
-    text-align: left;
-    border-bottom: 1px solid;
+  padding: 20px 0 10px 0;
+  text-align: left;
+  border-bottom: 1px solid;
 }
 
 .mySwiperH3 {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .mySwiperSectionImage {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .mySwiperSectionImage img {
-    width: 100%;
+  width: 100%;
 }
-.mySwiperSectionImages{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 1rem;
+.mySwiperSectionImages {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
 }
 
 .mySwiperChekbox {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .mySwiperChekboxImage {
-    padding: 20px 0;
-    object-fit: cover;
-    width: 100%;
+  padding: 20px 0;
+  object-fit: cover;
+  width: 100%;
 }
 
-.mySwiperInputText{
-    width: 465px;
-    height: 246px;
-    border: none;
-    color: inherit;
-    border-radius: 4px;
+.mySwiperInputText {
+  width: 465px;
+  height: 246px;
+  border: none;
+  color: inherit;
+  border-radius: 4px;
 }
 
 .containerForm {
-    background-color: var(--small-text);
-    padding: 40px;
-    margin-top: 25px;
-    color: var(--white-color);
+  background-color: var(--small-text);
+  padding: 40px;
+  margin-top: 25px;
+  color: var(--white-color);
 }
 
 @media (max-width: 1550px) {
-
-
 }

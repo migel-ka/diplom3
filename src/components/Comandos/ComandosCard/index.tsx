@@ -9,9 +9,12 @@ type Props = {
 const ComandosCard: FC<Props> = ({ data }) => {
   return (
     <div className={style.container}>
-        <img className={style.containerImg} src={data.imgUrl} alt={data.name} />
-        <h3> {data.name} {data.semame} </h3>
-        <p>{data.role}</p>
+      <img className={style.containerImg} src={data.imgUrl} alt={data.name} />
+      <h3>
+        {" "}
+        {data.name} {data.semame}{" "}
+      </h3>
+      <p>{data.role}</p>
     </div>
   );
 };

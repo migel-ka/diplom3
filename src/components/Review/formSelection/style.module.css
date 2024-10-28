@@ -1,29 +1,29 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
 }
 
 .containerInput {
-    width: 500px;
-    height: 60px;
-    border: none;
-    border-radius: 4px;
+  width: 500px;
+  height: 60px;
+  border: none;
+  border-radius: 4px;
 }
 
 .containerBtn {
-    font-family: 'IntroRegular';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    color: var(--white-color);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-  }
+  font-family: "IntroRegular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--white-color);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
 
-  .containerBtn {
+.containerBtn {
   width: 250px;
   height: 60px;
   background-color: var(--accent-color);

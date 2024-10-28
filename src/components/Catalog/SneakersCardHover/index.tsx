@@ -11,33 +11,36 @@ type IProps = {
   item: ISneakers;
 };
 
-const SneakersCardHove:FC<IProps> = ({ item }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const openModal = () => setIsModalOpen(true)
-  const closeModal = () => setIsModalOpen(false)
+const SneakersCardHove: FC<IProps> = ({ item }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const dispatch = useDispatch<AppDispatch>();
 
   return (
     <>
       <div className={style.container}>
-      <div className={style.buttonContainer}>
-      <div 
-        onClick={openModal}
-        className={style.button}> 
-        <img src={SEE} alt="SEE" /> 
+        <div className={style.buttonContainer}>
+          <div onClick={openModal} className={style.button}>
+            <img src={SEE} alt="SEE" />
+          </div>
+          <div
+            onClick={() => dispatch(postBasket(item))}
+            className={style.button}
+          >
+            <img src={ADD} alt="ADD" />
+          </div>
+        </div>
       </div>
-      <div 
-        onClick={() => dispatch(postBasket(item))}
-        className={style.button}> 
-        <img src={ADD} alt="ADD" /> 
-      </div>
-      </div>
-    </div>
-    {
-      isModalOpen && <ModalSnake data={item} closeModal={closeModal} isModalOpen={isModalOpen}/>
-    }
-  </>
+      {isModalOpen && (
+        <ModalSnake
+          data={item}
+          closeModal={closeModal}
+          isModalOpen={isModalOpen}
+        />
+      )}
+    </>
   );
 };
 

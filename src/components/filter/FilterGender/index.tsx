@@ -39,5 +39,4 @@ const FilterGender: FC<IProps> = ({ setValue }) => {
   );
 };
 
-
 export default FilterGender;

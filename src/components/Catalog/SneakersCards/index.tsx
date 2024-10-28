@@ -2,15 +2,15 @@ import style from "./style.module.css";
 import ButtonOne from "../../button/button";
 import React, { FC } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch,RootState } from "..//..//..//store";
+import { AppDispatch, RootState } from "..//..//..//store";
 import { ISneakers } from "..//..//slices/basketSlice";
 import { fetchSneakers } from "..//..//slices/sneakersSlice";
 import { changeLimit } from "..//..//slices/dataSlice";
 import SneakersCard from "../SneakersCard";
 
-
 interface IProps {
   gender: string;
+  filterValue: string;
 }
 
 const SneakersCards: FC<IProps> = ({ gender }) => {
@@ -33,19 +33,20 @@ const SneakersCards: FC<IProps> = ({ gender }) => {
 
   return (
     <>
-     <div
-      id="catalog"
-      className={style.containerGrid}>
-         {sneakers
+      <div id="catalog" className={style.containerGrid}>
+        {sneakers
           .filter((_, index) => index < limit)
           .map((item: ISneakers) => (
             <SneakersCard key={item.id} item={item} />
           ))}
       </div>
-      <ButtonOne text="Показать ещё" onClick={() => dispatch(changeLimit())} disabled={limit >= sneakers.length} />
+      <ButtonOne
+        text="Показать ещё"
+        onClick={() => dispatch(changeLimit())}
+        disabled={limit >= sneakers.length}
+      />
     </>
-   
   );
-}
+};
 
 export default SneakersCards;

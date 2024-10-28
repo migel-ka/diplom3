@@ -17,14 +17,17 @@ function ButtonOrange() {
 
   return (
     <>
-      <button
-        onClick={openModal}
-        className={style.container}>
+      <button onClick={openModal} className={style.container}>
         Корзина
         <img className={style.imgBasket} src={BASKET} alt="BASKET" />
-        <div className={style.containerCounter}> <p>{basketLength}</p> </div>
+        <div className={style.containerCounter}>
+          {" "}
+          <p>{basketLength}</p>{" "}
+        </div>
       </button>
-      {isModalOpen && <ModalBasketMini closeModal={closeModal} isModalOpen={isModalOpen} />}
+      {isModalOpen && (
+        <ModalBasketMini closeModal={closeModal} isModalOpen={isModalOpen} />
+      )}
     </>
   );
 }

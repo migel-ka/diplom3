@@ -1,44 +1,42 @@
-.container{
-    background-color: inherit;
-    border: none;
-    color: var(--white-color);
-    display: flex;
-    font-family: 'IntroBook';
-    font-size: 14px;
-    padding-left: 15px;
+.container {
+  background-color: inherit;
+  border: none;
+  color: var(--white-color);
+  display: flex;
+  font-family: "IntroBook";
+  font-size: 14px;
+  padding-left: 15px;
 }
 
-.containerCounter{
-    background-color: rgba(241, 79, 79, 1);
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
+.containerCounter {
+  background-color: rgba(241, 79, 79, 1);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
 }
 
 .imgBasket {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
-.container:hover{
-    font-weight: 600;
-    color: var(--sec-bg-color);
+.container:hover {
+  font-weight: 600;
+  color: var(--sec-bg-color);
 }
-
 
 @media (max-width: 1366px) {
-    .containerLink:not(:last-child) {
-        margin-right: 15px;
-    }
+  .containerLink:not(:last-child) {
+    margin-right: 15px;
+  }
 
-    .container {
-        font-size: 10px;
-        align-items: center;
-    }
-
+  .container {
+    font-size: 10px;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1024px) {
-    .containerLink:not(:last-child) {
-        margin-right: 10px;
-    }
+  .containerLink:not(:last-child) {
+    margin-right: 10px;
+  }
 }

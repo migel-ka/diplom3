@@ -1,9 +1,8 @@
-import { useSwiper } from 'swiper/react';
-import ButtonThree from '../../button/buttonThree/index';
-import { useEffect, useState } from 'react';
+import { useSwiper } from "swiper/react";
+import ButtonThree from "../../button/buttonThree/index";
+import { useEffect, useState } from "react";
 
 export default function SlideNextButton() {
-
   const swiper = useSwiper();
   const [isLastSlide, setIsLastSlide] = useState(false);
 
@@ -12,10 +11,10 @@ export default function SlideNextButton() {
       setIsLastSlide(swiper.isEnd);
     };
 
-    swiper.on('slideChange', handleSlideChange);
+    swiper.on("slideChange", handleSlideChange);
 
     return () => {
-      swiper.off('slideChange', handleSlideChange);
+      swiper.off("slideChange", handleSlideChange);
     };
   }, [swiper]);
 
@@ -23,11 +22,7 @@ export default function SlideNextButton() {
     swiper.slideNext();
   };
 
-  if (isLastSlide) return null; 
+  if (isLastSlide) return null;
 
-
-  return (
-    <ButtonThree text="Следующий шаг" onClick={handleClick} />
-  );
+  return <ButtonThree text="Следующий шаг" onClick={handleClick} />;
 }
-

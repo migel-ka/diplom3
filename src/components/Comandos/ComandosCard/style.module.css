@@ -1,26 +1,26 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    h3 {
-        padding: 20px 0;
-    }
+  h3 {
+    padding: 20px 0;
+  }
 
-    p {
-        padding-bottom: 40px;
-    }
+  p {
+    padding-bottom: 40px;
+  }
 }
 .containerImg {
-    border-radius: 4px;
-    max-width: 380px;
-    height: 400px;
-    object-fit: cover;
+  border-radius: 4px;
+  max-width: 380px;
+  height: 400px;
+  object-fit: cover;
 }
 
 @media (max-width: 1200px) {
-    .containerImg {
-        max-width: 250px;
-        height: 300px;
-    }
+  .containerImg {
+    max-width: 250px;
+    height: 300px;
+  }
 }

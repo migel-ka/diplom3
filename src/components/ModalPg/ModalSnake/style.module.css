@@ -1,130 +1,127 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    padding: 40px 40px 60px 40px;
-    position: relative;
-    z-index: 5;
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 60px 40px;
+  position: relative;
+  z-index: 5;
 }
 
 .modalBlock {
-    display: grid;
-    grid-template-columns: 50% 40%;
-    grid-column-gap: 20px;
+  display: grid;
+  grid-template-columns: 50% 40%;
+  grid-column-gap: 20px;
 }
 
 .imgSneak {
-    max-width: 100%;
-    max-height: auto; 
-    object-fit: cover;
-    padding-bottom: 60px;
-    border-radius: 4px;
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  padding-bottom: 60px;
+  border-radius: 4px;
 }
 
-.container h3{
-    padding-bottom: 24px;
+.container h3 {
+  padding-bottom: 24px;
 }
 
-.modalBlockDescription{
-    display: flex;
-    justify-content: space-between;
+.modalBlockDescription {
+  display: flex;
+  justify-content: space-between;
 }
 
-.modalBlockDescriptions{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.modalBlockDescriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .modalBlockDescriptionsPrice {
-    display: flex;
+  display: flex;
 }
 
 .redioSize {
-    display: flex;
+  display: flex;
 }
 
 .sizeLabel {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-right: 5px; 
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 5px;
 }
 
 .sizeLabel input[type="radio"] {
-    display: none; 
+  display: none;
 }
 
 .sizeLabel .customradio {
-    width: 25px; 
-    height: 25px; 
-    border: 1px solid var(--small-text);
-    border-radius: 4px; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    margin-right: 5px; 
-    position: relative;
-    font-size: 14px;
-    color: #333; 
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--small-text);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  position: relative;
+  font-size: 14px;
+  color: #333;
 }
 
 .sizeLabel input[type="radio"]:checked + .customradio {
-    background-color: var(--small-text); 
-    border-color: var(--small-text); 
-    color: white; 
+  background-color: var(--small-text);
+  border-color: var(--small-text);
+  color: white;
 }
 
-
-
 @media (max-width: 1366px) {
-    .container{
-        padding: 20px;
-        max-width: max-content;
-    }
+  .container {
+    padding: 20px;
+    max-width: max-content;
+  }
 }
 
 @media (max-width: 1024px) {
-    .container{
-        padding: 5px;
+  .container {
+    padding: 5px;
 
-        h2 {
-            font-size: 25px;
-        }
-
-        h3 {
-            padding-bottom: 10px;
-            font-size: 20px;
-        }
-
-        p {
-            font-size: 14px;
-        }
+    h2 {
+      font-size: 25px;
     }
 
-    .imgSneak {
-        padding-bottom: 30px;
+    h3 {
+      padding-bottom: 10px;
+      font-size: 20px;
     }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .imgSneak {
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 600px) {
-    .container{
-        padding: 0;
+  .container {
+    padding: 0;
 
-        h2 {
-            font-size: 20px;
-        }
-
-        h3 {
-            padding-bottom: 5px;
-            font-size: 15px;
-        }
-        p {
-            font-size: 10px;
-        }
+    h2 {
+      font-size: 20px;
     }
 
-    .imgSneak {
-        padding-bottom: 10px;
+    h3 {
+      padding-bottom: 5px;
+      font-size: 15px;
     }
-  
+    p {
+      font-size: 10px;
+    }
+  }
+
+  .imgSneak {
+    padding-bottom: 10px;
+  }
 }

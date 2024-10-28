@@ -1,31 +1,30 @@
 @import url(..//../index.css);
 
 .containerLink:not(:last-child) {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 .imgBasket {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 @media (max-width: 1366px) {
-    .containerLink:not(:last-child) {
-        margin-right: 15px;
-    }
+  .containerLink:not(:last-child) {
+    margin-right: 15px;
+  }
 
-    .containerLink {
-        font-size: 10px;
-    }
-
+  .containerLink {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .containerLink:not(:last-child) {
-        margin-right: 10px;
-    }
+  .containerLink:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 900px) {
-    .container {
-        display: none;
-    }
+  .container {
+    display: none;
+  }
 }

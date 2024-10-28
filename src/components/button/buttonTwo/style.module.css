@@ -1,5 +1,5 @@
 .button {
-  font-family: 'IntroRegular';
+  font-family: "IntroRegular";
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -7,7 +7,7 @@
   border-radius: 4px;
   border: 1px solid var(--text-color);
   cursor: pointer;
-  }
+}
 
 .button {
   width: 166px;

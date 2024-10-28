@@ -4,15 +4,15 @@ import style from "./style.module.css";
 interface Props {
   text: string;
   onClick: () => void;
+  disabled?: boolean;
 }
 
-const ButtonOne : FC<Props> = ({ text, onClick }) => {
+const ButtonOne: FC<Props> = ({ text, onClick }) => {
+  return (
+    <button className={style.button} onClick={onClick}>
+      {text}
+    </button>
+  );
+};
 
-    return (
-      <button className={style.button} onClick={onClick}>
-       { text }    
-      </button>
-    )
-  };
-  
-  export default ButtonOne;
+export default ButtonOne;

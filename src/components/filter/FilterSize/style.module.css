@@ -1,37 +1,37 @@
 .filterSize {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px 0;
 
-    input {
-      visibility: hidden;
-      position: absolute;
+  input {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  input:checked + label {
+    background-color: var(--small-text);
+  }
+
+  li {
+    width: calc(100% / 3);
+    label {
+      display: inline-block;
+      padding: 25px 0;
+      width: 100%;
+      text-align: center;
+      border: 0.5px solid var(--small-text);
     }
 
-    input:checked + label {
-      background-color: var(--small-text);
-    }
-
-    li {
-      width: calc(100% / 3);
-      label {
-        display: inline-block;
-        padding: 25px 0;
-        width: 100%;
-        text-align: center;
-        border: 0.5px solid var(--small-text);
+    @media (min-width: 768px) {
+      &:hover {
+        cursor: pointer;
+        background: rgba(219, 187, 169, 0.7);
       }
 
-      @media (min-width: 768px) {
-        &:hover {
-          cursor: pointer;
-          background: rgba(219, 187, 169, 0.7);
-        }
-
-        &:active {
-          background: rgba(219, 187, 169, 1);
-        }
+      &:active {
+        background: rgba(219, 187, 169, 1);
       }
     }
   }
+}

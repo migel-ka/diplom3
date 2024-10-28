@@ -1,57 +1,56 @@
 .container {
-    padding: 60px 15%;
+  padding: 60px 15%;
 }
 
-.containerBlock{
-    display: flex;
-    padding: 70px 0;
-    justify-content: space-between;
+.containerBlock {
+  display: flex;
+  padding: 70px 0;
+  justify-content: space-between;
 }
 
 .containerBlockForm {
-    max-width: 380px;
-    background-color: var(--bg-color);
-    border-radius: 4px;   
-    margin-right: 60px;
-    padding: 20px;
+  max-width: 380px;
+  background-color: var(--bg-color);
+  border-radius: 4px;
+  margin-right: 60px;
+  padding: 20px;
 }
 
 .logo {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .containerBlockInstagram {
-    max-width: 50%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .foto img {
-    object-fit: cover;
-    width: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 @media (max-width: 1366px) {
-    .container {
-        padding: 0 10%;
-    }
+  .container {
+    padding: 0 10%;
+  }
 
-    .containerBlockForm {  
-        margin-right: 20px;
-    }
-
+  .containerBlockForm {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .container {
-        padding: 0 10%;
-    }
+  .container {
+    padding: 0 10%;
+  }
 }
 
 @media (max-width: 950px) {
-    .containerBlock {
-        flex-direction: column;
-        align-items: center;
-    }
+  .containerBlock {
+    flex-direction: column;
+    align-items: center;
+  }
 }

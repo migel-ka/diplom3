@@ -1,40 +1,40 @@
-.container{
-    display: flex;
-    flex-direction: column;
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .containerBord {
-    padding: 10px;
-    margin-bottom: 10px;
-    overflow-y: auto;
-    max-height: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  max-height: 300px;
 }
 
-.sneakerItem{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 1rem;
+.sneakerItem {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
 }
 
 .sneakerItemImg {
-    object-fit: cover;
-    max-width: 100px;
+  object-fit: cover;
+  max-width: 100px;
 }
 
 .sneakerTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .sneakerItemBtn {
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 
-.containerBtn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.containerBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

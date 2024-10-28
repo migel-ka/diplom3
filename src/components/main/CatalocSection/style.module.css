@@ -1,27 +1,27 @@
 .container {
-    background-color: var(--white-color);
-    padding: 60px 15%;
+  background-color: var(--white-color);
+  padding: 60px 15%;
 }
 
-.containerFilterCatalog{
-    display: flex;
-    justify-content: space-between;
+.containerFilterCatalog {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 1366px) {
-    .container {
-        padding: 60px 10%;
-    }
+  .container {
+    padding: 60px 10%;
+  }
 }
 
 @media (max-width: 1024px) {
-    .container {
-        padding:  60px 10%;
-    }
+  .container {
+    padding: 60px 10%;
+  }
 }
 
 @media (max-width: 900px) {
-    .containerFilterCatalog{
-        flex-direction: column;
-    }
+  .containerFilterCatalog {
+    flex-direction: column;
+  }
 }

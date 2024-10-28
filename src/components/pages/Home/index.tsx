@@ -1,3 +1,4 @@
+import { FC } from "react";
 import AboutUsSection from "../../main/AboutUsSection";
 import CatalocSection from "../../main/CatalocSection";
 import ComandosSection from "../../main/ComandosSection";
@@ -6,18 +7,20 @@ import EndSection from "../../main/EndSection";
 import QuestionsSection from "../../main/QuestionsSection";
 import SelectionSection from "../../main/SelectionSection";
 
-const Home = () => {
-    return (
-        <>
-        <CatalocSection />
-        <AboutUsSection />
-        <SelectionSection />
-        <ComandosSection />
-        <QuestionsSection />
-        <ContactSection />
-        <EndSection />
-        </>
-    );
+const Home: FC = () => {
+  const filterValue = "someFilterValue";
+
+  return (
+    <>
+      <CatalocSection filterValue={filterValue} />
+      <AboutUsSection />
+      <SelectionSection />
+      <ComandosSection filterValue={filterValue} />
+      <QuestionsSection />
+      <ContactSection />
+      <EndSection />
+    </>
+  );
 };
 
 export default Home;

@@ -2,27 +2,27 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export interface ISneakers {
-  color: string;        
-  compound: string;  
-  country: string;      
-  description: string;  
-  gender: string;       
-  id: number;           
-  imgUrl: string;     
-  inStock: number;      
+  color: string;
+  compound: string;
+  country: string;
+  description: string;
+  gender: string;
+  id: number;
+  imgUrl: string;
+  inStock: number;
   oldPrice: number
-  price: number;   
-  sizes: number[];      
-  stars: number;       
-  title: string;      
-  vendorСode: string;   
+  price: number;
+  sizes: number[];
+  stars: number;
+  title: string;
+  vendorСode: string;
 }
 
 interface IParams {
-  priceFrom: number;   
-  priceTo: number;      
-  gender: string;      
-  sizes: number[];  
+  priceFrom: number;
+  priceTo: number;
+  gender: string;
+  sizes: number[];
 }
 
 const BASE_URL: string = "https://57ebb7d934c23933.mokky.dev";

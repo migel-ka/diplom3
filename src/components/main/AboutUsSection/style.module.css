@@ -1,55 +1,54 @@
 .section {
-    background-color: var( --bg-color);
+  background-color: var(--bg-color);
 }
 
 .figure {
-    position: absolute;
-    z-index: 0;
+  position: absolute;
+  z-index: 0;
 }
 
 .container {
-    padding: 0 15%;
-    color: var(--white-color);
-    display: flex;
-    z-index: 1;
+  padding: 0 15%;
+  color: var(--white-color);
+  display: flex;
+  z-index: 1;
 }
 
 .sectionText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.sectionTextP{
-    line-height: 22.4px;
-    margin-top: 20px;
+.sectionTextP {
+  line-height: 22.4px;
+  margin-top: 20px;
 }
 
 .sectionTextSpan {
-    text-align: right;
-    margin-top: 20px;
+  text-align: right;
+  margin-top: 20px;
 }
 
 @media (max-width: 1366px) {
-    .container {
-        padding: 0 10%;
-    }
+  .container {
+    padding: 0 10%;
+  }
 }
 
 @media (max-width: 1024px) {
-    .container {
-        padding: 0 10%;
-        flex-direction: column-reverse;
-    }
+  .container {
+    padding: 0 10%;
+    flex-direction: column-reverse;
+  }
 
-    .sectionTextSpan {
-        margin-bottom: 30px;
-    }
+  .sectionTextSpan {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 600px) {
-    .figure {
-        width: 50%;
-    }
+  .figure {
+    width: 50%;
+  }
 }

@@ -8,12 +8,12 @@
 
 @media (max-width: 1366px) {
   .container {
-      padding: 0 10%;
+    padding: 0 10%;
   }
 }
 
 @media (max-width: 1024px) {
   .container {
-      padding: 0 10%;
+    padding: 0 10%;
   }
 }

@@ -1,37 +1,37 @@
 .section {
-    background-color: var( --bg-color);
+  background-color: var(--bg-color);
 
-    h2 {
-        padding: 60px 0 40px 0;
-    }
+  h2 {
+    padding: 60px 0 40px 0;
+  }
 }
 
 .figure {
-    position: absolute;
-    z-index: 0;
-    right: 0;
+  position: absolute;
+  z-index: 0;
+  right: 0;
 }
 
 .container {
-    padding: 60px 15%;
-    padding-top: 40px;
-    color: var(--white-color);
-    display: flex;
-    flex-direction: column;
+  padding: 60px 15%;
+  padding-top: 40px;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
 
-    h2 {
-        z-index: 10;
-    }
+  h2 {
+    z-index: 10;
+  }
 }
 
 @media (max-width: 1366px) {
-    .container {
-        padding: 0 10%;
-    }
+  .container {
+    padding: 0 10%;
+  }
 }
 
 @media (max-width: 1024px) {
-    .container {
-        padding: 0 5%;
-    }
+  .container {
+    padding: 0 5%;
+  }
 }

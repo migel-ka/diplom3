@@ -1,26 +1,26 @@
 .container {
-    padding: 60px 15%;
+  padding: 60px 15%;
 }
 
-.containerBlock{
-    background-color: var(--sec-bg-color);
-    padding: 40px 100px;
+.containerBlock {
+  background-color: var(--sec-bg-color);
+  padding: 40px 100px;
 }
 
 @media (max-width: 1550px) {
-    .containerBlock{
-        padding: 3% 3%;
-    }
+  .containerBlock {
+    padding: 3% 3%;
+  }
 }
 
 @media (max-width: 1366px) {
-    .container {
-        padding: 60px 10%;
-    }
+  .container {
+    padding: 60px 10%;
+  }
 }
 
 @media (max-width: 1024px) {
-    .container {
-        padding: 60px 10%;
-    }
+  .container {
+    padding: 60px 10%;
+  }
 }

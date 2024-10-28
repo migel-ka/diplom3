@@ -6,16 +6,16 @@ import NotFound from "./pages/NotFound";
 import SneakerPage from "./SneakerPage/SneakerPage";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Layout />,
-        children: [
-           { index: true, element: <Home />},
-           { path: "ProductCard", element: <ProductCard />},
-           { path: "sneaker/:id", element: <SneakerPage />},
-           { path: "*", element: <NotFound />},
-        ]
-    }
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "ProductCard", element: <ProductCard /> },
+      { path: "sneaker/:id", element: <SneakerPage /> },
+      { path: "*", element: <NotFound /> },
+    ],
+  },
 ]);
 
 export default router;

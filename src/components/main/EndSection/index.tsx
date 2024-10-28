@@ -8,21 +8,20 @@ const EndSection = () => {
   return (
     <section className={style.container}>
       <div className={style.containerBlock}>
-       <div className={style.containerBlockForm}>
-        <FormQuestion />
-       </div>
-       <div className={style.containerBlockInstagram}>
-        <div className={style.logo}>
-          <img src={INST} alt="Instagram" />
+        <div className={style.containerBlockForm}>
+          <FormQuestion />
         </div>
-        <div className={style.foto}>
-          <img src={PIC} alt="pictures" />
+        <div className={style.containerBlockInstagram}>
+          <div className={style.logo}>
+            <img src={INST} alt="Instagram" />
+          </div>
+          <div className={style.foto}>
+            <img src={PIC} alt="pictures" />
+          </div>
         </div>
-       </div>
       </div>
     </section>
-    )
-  }
-  
-  export default EndSection;
-  
+  );
+};
+
+export default EndSection;

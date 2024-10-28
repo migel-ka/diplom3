@@ -1,57 +1,54 @@
 .filterGender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+  }
 
-    div {
-      display: flex;
-      align-items: center;
-    }
+  input {
+    visibility: hidden;
+    position: absolute;
+  }
 
-    input {
-      visibility: hidden;
-      position: absolute;
-      
-    }
+  label {
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 34px;
+    padding-right: 25px;
 
-    label {
-      position: relative;
+    &::before {
+      content: "";
+      width: 24px;
       height: 24px;
-      line-height: 24px;
-      padding-left: 34px;
-      padding-right: 25px;
-
-      &::before {
-        content: "";
-        width: 24px;
-        height: 24px;
-        border: 1px solid var(--small-text);
-        border-radius: 4px;
-        position: absolute;
-        left: 0;
-      }
-    }
-
-    input:checked + label::before {
-      background: url("..//..//images/checkBox.png") no-repeat center;
+      border: 1px solid var(--small-text);
+      border-radius: 4px;
+      position: absolute;
+      left: 0;
     }
   }
 
-  @media (max-width: 1600px) {
-    .filterGender {
-        flex-direction: column;
+  input:checked + label::before {
+    background: url("..//..//images/checkBox.png") no-repeat center;
+  }
+}
 
-        label{
-            margin-top: 10px;
-        }
-    }   
-    
-    @media (max-width: 900px) {
-        .filterGender {
-            flex-direction: column;
-    
-        } 
+@media (max-width: 1600px) {
+  .filterGender {
+    flex-direction: column;
+
+    label {
+      margin-top: 10px;
     }
-    
+  }
+
+  @media (max-width: 900px) {
+    .filterGender {
+      flex-direction: column;
+    }
+  }
 }

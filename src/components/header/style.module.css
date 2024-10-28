@@ -1,93 +1,93 @@
 @import url(..//../index.css);
 
 .container {
-    background-color: var(--bg-color);
-    padding: 0 15%;
+  background-color: var(--bg-color);
+  padding: 0 15%;
 }
 
 .contenerNav {
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--white-color) ;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--white-color);
 }
 
 .burgerBTN {
-    border: none;
+  border: none;
 }
 
 .containerIntro {
-    padding: 100px 0;
-    color: var(--white-color);
-    width: 70%;
-    position: static;
+  padding: 100px 0;
+  color: var(--white-color);
+  width: 70%;
+  position: static;
 
-    img {
-        position: absolute;
-        z-index: 0;
-        opacity: 0.5;
-        width: 60%;
-    }
+  img {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+    width: 60%;
+  }
 }
 
 .containerIntro h1 {
-    line-height: 50.4px
+  line-height: 50.4px;
 }
 
-.containerIntro p{
-    margin: 20px 0 40px 0;
+.containerIntro p {
+  margin: 20px 0 40px 0;
 }
 
 .containerNav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .burger {
-    display: none;
-    right: 200px;
-    top: 20px;
+  display: none;
+  right: 200px;
+  top: 20px;
 }
 
 .burgerLine {
-    height: 2px;
-    width: 100%;
-    background-color: var(--accent-color); 
+  height: 2px;
+  width: 100%;
+  background-color: var(--accent-color);
 }
 
 @media (max-width: 1366px) {
-    .container {
-        padding: 0 10%;
-    }
+  .container {
+    padding: 0 10%;
+  }
 }
 
 @media (max-width: 1024px) {
-    .container {
-        padding: 0 10%;
-    }
+  .container {
+    padding: 0 10%;
+  }
 }
 
 @media (max-width: 900px) {
-    .burger {
-        position: absolute;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 25px;
-        height: 25px;
-    }
+  .burger {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (max-width: 700px) {
-    .burger {
-        right: 175px;
-    }
+  .burger {
+    right: 175px;
+  }
 }
 
 @media (max-width: 400px) {
-    .burger {
-        right: 135px;
-    }
+  .burger {
+    right: 135px;
+  }
 }

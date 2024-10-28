@@ -1,30 +1,30 @@
 .containerGrid {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
 }
 
 .containerGrid button {
-    width: 250px;
-    height: 60px;
-    background-color: var(--accent-color);
+  width: 250px;
+  height: 60px;
+  background-color: var(--accent-color);
 }
 
 .containerGrid button:hover {
-    background-color: var(--accent-hover-color);
+  background-color: var(--accent-hover-color);
 }
 
 .containerGrid button:active {
-    background-color: var(--accent-active-color);
+  background-color: var(--accent-active-color);
 }
 @media (max-width: 1500px) {
-    .containerGrid {
-        grid-template-columns: repeat(2, auto);
-    }
+  .containerGrid {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 @media (max-width: 650px) {
-    .containerGrid {
-        grid-template-columns: repeat(1, auto);
-    }
+  .containerGrid {
+    grid-template-columns: repeat(1, auto);
+  }
 }

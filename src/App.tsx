@@ -1,5 +1,5 @@
 import { RouterProvider } from "react-router-dom";
-import { Provider } from "react-redux"; 
+import { Provider } from "react-redux";
 import router from "./components/router";
 import { store } from "./store";
 

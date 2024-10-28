@@ -3,14 +3,12 @@ import LOGO from "..//images/logo.svg";
 import Nav from "../Nav";
 
 function Footer() {
-  
-    return (
-      <footer className={style.container}>
-        <img src={LOGO} alt="logo" />
-        <Nav />
-      </footer>
-    )
-  }
-  
-  export default Footer
-  
+  return (
+    <footer className={style.container}>
+      <img src={LOGO} alt="logo" />
+      <Nav />
+    </footer>
+  );
+}
+
+export default Footer;
