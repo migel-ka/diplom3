@@ -10,6 +10,10 @@
     max-width: 100%;
     border: none;
     background-color: inherit;
-    align-items: center;
+    text-align: right;
   }
+}
+
+.priceInput {
+  text-align: left;
 }

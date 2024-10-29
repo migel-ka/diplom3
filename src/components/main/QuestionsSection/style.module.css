@@ -6,6 +6,10 @@
   }
 }
 
+.section {
+  margin-bottom: 60px;
+}
+
 @media (max-width: 1366px) {
   .container {
     padding: 0 10%;

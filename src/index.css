@@ -94,11 +94,16 @@ a:hover {
 /* Стили слайдера */
 
 .noUi-target {
-  background: var(--text-color);
-  height: 5px;
-  border-radius: none;
-  margin-top: 10px;
-  z-index: 1;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  background: none;
+  border: none;
+}
+
+.noUi-horizontal {
+  height: 4px;
 }
 
 .noUi-connect {
@@ -106,9 +111,22 @@ a:hover {
 }
 
 .noUi-handle {
-  background: var(--text-color);
-  width: 2px;
-  height: 2px;
+  width: 6px !important;
+  height: 20px !important;
+  background-color: var(--text-color);
+  box-shadow: none;
+  border: none;
+  right: auto;
+  top: auto;
+  position: relative;
+}
+
+.noUi-handle::before {
+  content: none;
+}
+
+.noUi-handle::after {
+  content: none;
 }
 
 .noUi-handle:hover {
